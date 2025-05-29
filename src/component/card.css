@@ -1,6 +1,166 @@
-.card{
+/* .card{
     background-image: url("./assets/backgimg.avif");
    
     background-size: cover
 
+} */
+body {
+  background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  margin: 1rem;
+}
+
+.card {
+  margin-top: 3rem;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  color: #333;
+  animation: fadeInUp 1s ease-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.card-img-top {
+  animation: bounce 2s infinite;
+  margin: 0 auto;
+  display: block;
+}
+
+.card-body h1 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+  text-transform: capitalize;
+}
+
+.card-body p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.form-control {
+  border-radius: 30px;
+  padding: 0.8rem 1.2rem;
+}
+
+.btn-outline-success {
+  border-radius: 30px;
+  padding: 0.6rem 1.5rem;
+  background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+  color: #fff;
+  border: none;
+}
+
+.btn-outline-success:hover {
+  background: linear-gradient(135deg, #66a6ff 0%, #89f7fe 100%);
+  color: #fff;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+/* Sunny */
+.clear {
+  background: linear-gradient(135deg, #fceabb, #f8b500);
+  animation: sunnyAnimation 6s infinite alternate;
+}
+
+@keyframes sunnyAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Clouds */
+.clouds {
+  background: linear-gradient(135deg, #d7d2cc, #304352);
+  animation: cloudyAnimation 5s infinite alternate;
+}
+
+@keyframes cloudyAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+/* Rain */
+.rain {
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  animation: rainAnimation 5s infinite alternate;
+}
+
+@keyframes rainAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+/* Mist */
+.mist {
+  background: linear-gradient(135deg, #757f9a, #d7dde8);
+  animation: mistAnimation 6s infinite alternate;
+}
+
+@keyframes mistAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Snow */
+.snow {
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  animation: snowAnimation 5s infinite alternate;
+}
+
+@keyframes snowAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
